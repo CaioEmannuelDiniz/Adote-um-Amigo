@@ -1,4 +1,4 @@
-const { useState } = React; 
+const { useState } = React;
 
 
 const dadosAnimais = [
@@ -6,7 +6,7 @@ const dadosAnimais = [
         nome: "Rex",
         idade: 2,
         unidade: "anos",
-        tipo: "Cachorro", 
+        tipo: "Cachorro",
         image: "https://images.unsplash.com/photo-1609348490161-a879e4327ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
         descricao: "Thor é um cão dócil e brincalhão que adora passear. Perfeito para uma família ativa.",
     },
@@ -22,7 +22,7 @@ const dadosAnimais = [
         nome: "Bob",
         idade: 4,
         unidade: "meses",
-        tipo: "Cachorro", 
+        tipo: "Cachorro",
         image: "https://images.unsplash.com/photo-1543888368-e0821c2ac6b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmcmllbmRseSUyMHB1cHB5fGVufDF8fHx8MTc2NDcyNTE3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
         descricao: "Bob é um cão de porte médio, muito leal e protetor. Se dá bem com crianças mais velhas.",
     },
@@ -30,7 +30,7 @@ const dadosAnimais = [
         nome: "Mia",
         idade: 1,
         unidade: "anos",
-        tipo: "Gato", 
+        tipo: "Gato",
         image: "https://images.unsplash.com/photo-1613915588863-e6cc05fcaa16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwbGF5ZnVsJTIwa2l0dGVufGVufDF8fHx8MTc2NDY3MzkzNXww&ixlib=rb-4.1.0&q=80&w=1080",
         descricao: "Mia é uma gatinha jovem e brincalhona. Está sempre pronta para se divertir e explorar. Precisa de uma família que tenha tempo para brincar e interagir com ela",
     },
@@ -38,7 +38,7 @@ const dadosAnimais = [
         nome: "Thor",
         idade: 5,
         unidade: "anos",
-        tipo: "Cachorro", 
+        tipo: "Cachorro",
         image: "https://images.unsplash.com/photo-1734966213753-1b361564bab4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnb2xkZW4lMjByZXRyaWV2ZXIlMjBkb2d8ZW58MXx8fHwxNzY0NjE2ODcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
         descricao: "Thor é um golden retriever muito gentil e protetor. Adora longas caminhadas e é muito leal. Ideal para famílias ativas que gostem de atividades ao ar livre",
     },
@@ -46,10 +46,75 @@ const dadosAnimais = [
         nome: "Belinha",
         idade: 2,
         unidade: "anos",
-        tipo: "Gato", 
+        tipo: "Gato",
         image: "https://images.unsplash.com/photo-1613915588863-e6cc05fcaa16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwbGF5ZnVsJTIwa2l0dGVufGVufDF8fHx8MTc2NDY3MzkzNXww&ixlib=rb-4.1.0&q=80&w=1080",
         descricao: "Belinha é uma gatinha muito carinhosa que adora colo. É calma e se adapta facilmente a novos ambientes. Perfeita para quem mora em apartamento.",
+    },
+    {
+        nome: "Max",
+        idade: 3,
+        unidade: "anos",
+        tipo: "Cachorro",
+        image: "https://s2.glbimg.com/9rc20ejihRZj_bk0ufhodeVKHNg=/smart/e.glbimg.com/og/ed/f/original/2022/07/31/cachorro-prefeito-morre-gq.jpg",
+        descricao: "Max é um cão alegre e cheio de energia. Adora correr e brincar ao ar livre. Ideal para pessoas que gostam de atividades físicas.",
+    },
+    {
+        nome: "Nina",
+        idade: 6,
+        unidade: "meses",
+        tipo: "Gato",
+        image: "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        descricao: "Nina é uma gatinha dócil e muito curiosa. Sempre está explorando cantinhos e adora brincar com bolinhas.",
+    },
+    {
+        nome: "Apollo",
+        idade: 4,
+        unidade: "anos",
+        tipo: "Cachorro",
+        image: "https://fotos.amomeupet.org/uploads/fotos/1696264779_651af24b17978_hd.jpeg",
+        descricao: "Apollo é um cão forte e protetor, mas muito carinhoso com a família. Perfeito para quem busca segurança e companheirismo.",
+    },
+    {
+        nome: "Mel",
+        idade: 2,
+        unidade: "anos",
+        tipo: "Gato",
+        image: "https://images.unsplash.com/photo-1519052537078-e6302a4968d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        descricao: "Mel é calma, elegante e muito afetuosa. Gosta de janelas ensolaradas e momentos tranquilos. Ideal para quem quer uma companhia serena.",
+    },
+    {
+        nome: "Spike",
+        idade: 8,
+        unidade: "meses",
+        tipo: "Cachorro",
+        image: "https://f.i.uol.com.br/fotografia/2023/01/20/167424435163caf0ff4ca96_1674244351_3x2_md.jpg",
+        descricao: "Spike é um filhote esperto e muito brincalhão. Está aprendendo comandos básicos e se dá bem com outros pets.",
+    },
+    {
+        nome: "Zara",
+        idade: 3,
+        unidade: "anos",
+        tipo: "Gato",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuQOvsaLwCltScKqYM1yvCUw9Vdls2knpQ2Q&s",
+        descricao: "Zara é independente e observadora. Adora ambientes tranquilos e pessoas pacientes. Uma ótima companhia para dias calmos.",
+    },
+    {
+        nome: "Toby",
+        idade: 1,
+        unidade: "anos",
+        tipo: "Cachorro",
+        image: "https://fotos.amomeupet.org/uploads/fotos/1645625829_621641e5b6aab_hd.jpeg",
+        descricao: "Toby é muito amigável e sociável, sempre querendo atenção e carinho. Excelente para famílias com crianças.",
+    },
+    {
+        nome: "Kiara",
+        idade: 5,
+        unidade: "anos",
+        tipo: "Gato",
+        image: "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+        descricao: "Kiara é amorosa e tranquila. Adora colo e é perfeita para quem busca um animal carinhoso e tranquilo.",
     }
+
 
 ];
 
@@ -201,8 +266,8 @@ function AdoptionFormView({ animal, voltarDetalhes, voltarHome }) {
     const [email, setEmail] = useState('');
     const [motivo, setMotivo] = useState('');
 
-    
-    const WHATSAPP_NUMBER = '5583988940862'; 
+
+    const WHATSAPP_NUMBER = '5583988940862';
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -363,16 +428,16 @@ function App() {
         content = (
             <DetailView
                 animal={animalSelecionado}
-                voltar={navegarParaLista} 
-                abrirFormulario={navegarParaFormulario} 
+                voltar={navegarParaLista}
+                abrirFormulario={navegarParaFormulario}
             />
         );
     } else if (view === 'form' && animalSelecionado) {
         content = (
             <AdoptionFormView
                 animal={animalSelecionado}
-                voltarDetalhes={navegarParaDetalhesDeFormulario} 
-                voltarHome={navegarParaLista} 
+                voltarDetalhes={navegarParaDetalhesDeFormulario}
+                voltarHome={navegarParaLista}
             />
         );
     } else {
